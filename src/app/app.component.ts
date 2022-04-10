@@ -32,5 +32,9 @@ export class AppComponent  {
   misout(out){
     console.log("mouse out")
   }
+count = 0;
+counter(type:String){
+  type ==='add' ?this.count++ : this.count--;
+}
 }
 
