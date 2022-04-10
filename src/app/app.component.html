@@ -1,0 +1,47 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+{{getname()}}<br />
+<h1>{{obj.age}}</h1>
+
+{{arr.length}}
+{{arr[2]}}<br />
+<p>Addition is : {{a+b}}</p><br />
+<p>{{a-b}}<br/></p>
+{{siteurl}}
+
+<button (click)="getmyname('Asim bhai')">Get name</button>
+<button (click)="getmyname(yourname)">Get name</button>
+
+<h1>Event function pratice work</h1>
+<button (click)="eventfunc('click event')">Click Me</button>
+
+<h2>key up ecent</h2>
+<input type="text" (keyup)="eventfunc('key up event')"><br/>
+<h4>when some one enter in text box then value get</h4>
+<input type="text" #box (keyup)="eventfunc(box.value)"/>
+<h4>when some one enter in text box then value get</h4>
+<input type="text" #box2 (keyup.enter)="eventfunc(box2.value)">
+<h4>when some one enter space then value is render</h4>
+<input type="text" #box3 (keyup.space)="eventfunc(box3.value)">
+<h2>key down event</h2>
+<input type="text" #box4 (keydown)="eventfunc(box4.value)">
+<h3>blur in event</h3>
+<input type="text" #box5 (blur)="eventfunc(box5.value)">
+
+<h2>mouseover and mouseleave evenet</h2>
+<div
+  (mouseover)="msin('my')"
+  style="background-color:'blue'"
+><br/>
+mouse event
+</div>
+<h1>mouse out function</h1>
+<div
+(mouseleave)="misout('out')"
+style="background-color:'yellow'"
+>Mouse out 
+</div>
+
+
